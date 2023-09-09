@@ -4,12 +4,9 @@ from datetime import datetime
 import pytz
 
 def get_info(request):
-    # Get query parameters from the request
-    slack_name = request.GET.get('slack_name', '')
-    track = request.GET.get('track', '')
-
     # Get the current day of the week
     current_day = datetime.now(pytz.utc).strftime('%A')
+    track = request.GET.get('track', 'backend')
 
     # Get the current UTC time within a +/-2 minute 
     utc_time = datetime.now(pytz.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -20,7 +17,7 @@ def get_info(request):
 
     # Create the JSON response
     response_data = {
-        "slack_name": slack_name,
+        "slack_name": 'pascal_owilly',
         "current_day": current_day,
         "utc_time": utc_time,
         "track": track,
@@ -29,7 +26,7 @@ def get_info(request):
         "status_code": 200
     }
 
-    # Create an HttpResponse with a custom status message
+    # HttpResponse with a custom status message
     response = HttpResponse(json.dumps(response_data), content_type='application/json', status=200)
     response.reason_phrase = 'OK'
 
