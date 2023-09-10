@@ -1,33 +1,33 @@
-from django.http import HttpResponse
-import json
-from datetime import datetime
-import pytz
+from django.http import JsonResponse
+import datetime
+from django.utils import timezone
 
-def get_info(request):
-    # Get the current day of the week
-    current_day = datetime.now(pytz.utc).strftime('%A')
+def api_get_example_slack_info(request):
+    # Get query parameters
+    slack_name = request.GET.get('slack_name', 'example_name')
     track = request.GET.get('track', 'backend')
-
-    # Get the current UTC time within a +/-2 minute 
-    utc_time = datetime.now(pytz.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
-
-    # GitHub file and repository URLs
-    github_file_url = "https://github.com/Pascal-Owilly/zuri-training.git"
-    github_repo_url = "https://github.com/Pascal-Owilly/zuri-training"
-
-    # Create the JSON response
+    
+    # Get current day of the week
+    current_day = datetime.datetime.now().strftime('%A')
+    
+    # Get current UTC time with timezone validation
+    utc_time = timezone.now()
+    if utc_time.tzinfo is None or utc_time.tzinfo.utcoffset(utc_time) != datetime.timedelta(minutes=0):
+        return JsonResponse({"error": "Invalid UTC time"}, status=400)
+    
+    # Define GitHub URLs
+    github_file_url = "https://github.com/Pascal-Owilly/zuri.git"
+    github_repo_url = "https://github.com/Pascal-Owilly/zuri"
+    
+    # Prepare the JSON response
     response_data = {
-        "slack_name": 'pascal_owilly',
+        "slack_name": slack_name,
         "current_day": current_day,
-        "utc_time": utc_time,
+        "utc_time": utc_time.strftime('%Y-%m-%dT%H:%M:%SZ'),
         "track": track,
         "github_file_url": github_file_url,
         "github_repo_url": github_repo_url,
         "status_code": 200
     }
-
-    # HttpResponse with a custom status message
-    response = HttpResponse(json.dumps(response_data), content_type='application/json', status=200)
-    response.reason_phrase = 'OK'
-
-    return response
+    
+    return JsonResponse(response_data)
