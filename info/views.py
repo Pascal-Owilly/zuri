@@ -1,6 +1,19 @@
+# task 1
+
 from django.http import JsonResponse
 import datetime
 from django.utils import timezone
+
+# task 2
+
+from rest_framework import generics
+from .models import Person
+from .serializers import PersonSerializer
+from rest_framework.response import Response
+from rest_framework.permissions import AllowAny
+
+
+# task 1
 
 def api_get_example_slack_info(request):
     # Get query parameters
@@ -31,3 +44,18 @@ def api_get_example_slack_info(request):
     }
     
     return JsonResponse(response_data)
+
+# task 2
+
+
+class PersonListCreateView(generics.ListCreateAPIView):
+    queryset = Person.objects.all()
+    serializer_class = PersonSerializer
+    permission_classes = (AllowAny,)
+
+
+class PersonDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Person.objects.all()
+    serializer_class = PersonSerializer
+    permission_classes = (AllowAny,)
+
