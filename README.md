@@ -39,7 +39,6 @@ List and describe the available API endpoints. Include example requests and resp
 
   ```json
   {
-    "name": "John Doe",
-    "age": 30
+    "name": "John Doe"
   }
   
