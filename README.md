@@ -24,14 +24,14 @@ You need `python version 3.9` and above, `Django 4.2`
 
 ### Installation and execution
 
-    * `git clone https://github.com/Pascal-Owilly/zuri.git`
-    * `cd zuri-training`
-    * `virtualenv venv`
-    * `source venv/bin/activate`
-    * `cd zuri`
-    * `pip install django`
-    * `pip install djangorestframework`
-    * `python manage.py runserver`
+    `git clone https://github.com/Pascal-Owilly/zuri.git`
+    `cd zuri-training`
+    `virtualenv venv`
+    `source venv/bin/activate`
+    `cd zuri`
+    `pip install django`
+    `pip install djangorestframework`
+    `python manage.py runserver`
 
 ## Usage
 
