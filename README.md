@@ -7,9 +7,7 @@
   - [Installation](#installation)
 - [Usage](#usage)
   - [API Endpoints](#api-endpoints)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contributor](#contributor)
 
 ## Getting Started
 
@@ -61,3 +59,10 @@ Just head to `https://enceptics.pythonanywhere.com/api/`
   {
     "name": "Jane Doe",
   }
+
+### Contributor
+#### Pascal Owilly
+#### [Contact Me](pascalouma54@gmail.com)
+  
+
+  
