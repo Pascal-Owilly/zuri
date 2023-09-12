@@ -34,7 +34,7 @@ You need `python version 3.9` and above, `Django 4.2`
     `pip install drf-yasg` - This is a swagger doc which will provide the request and response 
     `python manage.py runserver`
 
-## Usage
+## API Usage
 
 This is an API endpoint which can be used to create, read, update and delete names
 just hed to 
