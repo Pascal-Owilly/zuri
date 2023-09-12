@@ -62,7 +62,7 @@ Just head to `https://enceptics.pythonanywhere.com/api/`
 
 ### Contributor
 #### Pascal Owilly
-#### [Contact Me](pascalouma54@gmail.com)
+#### [Email Me](mailto:pascalouma54@gmail.com)
   
 
   
