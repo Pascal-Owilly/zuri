@@ -2,50 +2,66 @@
 
 ## Getting Started
 
-* You need the following to get started:
-  1. IDE (Text editor e.g visual studio code, atom etc )
-  2. Terminal for executing your commands
-  3. Computer with 4gb ram and above
+To get started, make sure you have the following:
+
+1. IDE (Text editor e.g. Visual Studio Code, Atom, etc.)
+2. Terminal for executing your commands
+3. Computer with 4GB RAM or above
 
 ### Prerequisites
 
-You need `python version 3.9` and above, `Django 4.2`
+You'll need the following software installed:
 
-### Installation and execution
+- Python version 3.9 and above
+- Django 4.2
 
-    `git clone https://github.com/Pascal-Owilly/zuri.git`
-    `cd zuri-training`
-    `virtualenv venv`
-    `source venv/bin/activate`
-    `cd zuri`
-    `pip install django`
-    `pip install djangorestframework`
-    `pip install drf-yasg` - This is a swagger doc which will provide the request and response 
-    `python manage.py runserver`
+### Installation and Execution
+
+1. Clone the repository:
+
+2. Navigate to the project directory:
+
+3. Create a virtual environment (venv):
+
+4. Activate the virtual environment:
+
+5. Navigate to the Django project folder:
+
+6. Install Django:
+
+7. Install Django Rest Framework:
+
+8. Install drf-yasg (Swagger documentation):
+
+8. Install drf-yasg (Swagger documentation):
+
+9. Run the Django development server:
 
 ### API Endpoints and Usage
 
-`https://enceptics.pythonanywhere.com/api/` 
+- **List of Names:**
+- URL: `https://enceptics.pythonanywhere.com/api/`
+- Description: Lists the names created and stored in the database
 
-    - Lists the names created and stored in the database
+- **Retrieve and CRUD Operations on a Name:**
+- URL: `https://enceptics.pythonanywhere.com/1/`
+- Description: Retrieves the first name in the list and performs CRUD operations on it. You can replace `1` with any id to perform these operations on a different person.
 
-`https://enceptics.pythonanywhere.com/1/` 
+- **List a Specific Name with a Query Parameter:**
+- URL: `https://enceptics.pythonanywhere.com/api/?filter_param=name`
+- Description: Lists a specific name passed as a query parameter. For example, [https://enceptics.pythonanywhere.com/api/?filter_param=pascal](https://enceptics.pythonanywhere.com/api/?filter_param=pascal) returns the name `pascal`.
 
-    - Retrieves the first name of the list and perfoms CRUD operations to it (replace `1` with any id to perform this on a different person)
+#### Documentation with Swagger
 
-`https://enceptics.pythonanywhere.com/api/?filter_param=name` - Lists a specific name passed inside the query for example [https://enceptics.pythonanywhere.com/api/?filter_param=pascal](https://enceptics.pythonanywhere.com/api/?filter_param=pascal) returns the name `pascal`
-
-#### Documentaton with swagger
-
- [https://enceptics.pythonanywhere.com/swagger/](https://enceptics.pythonanywhere.com/swagger/)
+You can access the API documentation using Swagger at [https://enceptics.pythonanywhere.com/swagger/](https://enceptics.pythonanywhere.com/swagger/).
 
 #### Create a New Person
 
-- **URL:** `/api/persons/`
+- **URL:** `/api/`
 - **Method:** POST
 - **Request Body:**
 
-  ```json
-  {
-    "name": "Jane Doe",
-  }
+```json
+{
+"name": "Jane Doe"
+}
