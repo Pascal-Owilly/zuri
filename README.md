@@ -17,25 +17,24 @@ You'll need the following software installed:
 
 ### Installation and Execution
 
-1. Clone the repository:
+1. Clone the repository: `git clone https://github.com/Pascal-Owilly/zuri.git`
 
-2. Navigate to the project directory:
+2. Navigate to the project directory: `cd zuri-training`
 
-3. Create a virtual environment (venv):
+3. Create a virtual environment (venv): `virtualenv venv`
 
-4. Activate the virtual environment:
+4. Activate the virtual environment: `source venv/bin/activate`
 
-5. Navigate to the Django project folder:
+5. Navigate to the Django project folder: `cd zuri`
 
-6. Install Django:
+6. Install Django: `pip install django`
 
-7. Install Django Rest Framework:
+7. Install Django Rest Framework: `pip install djangorestframework`
 
-8. Install drf-yasg (Swagger documentation):
+8. Install drf-yasg (Swagger documentation): `pip install drf-yasg`
 
-8. Install drf-yasg (Swagger documentation):
+9. Run the Django development server: `python manage.py runserver`
 
-9. Run the Django development server:
 
 ### API Endpoints and Usage
 
@@ -65,3 +64,5 @@ You can access the API documentation using Swagger at [https://enceptics.pythona
 {
 "name": "Jane Doe"
 }
+
+#### [Email me](mailto:pascalouma54#gmail.com)
