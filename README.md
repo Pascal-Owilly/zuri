@@ -59,10 +59,9 @@ You can access the API documentation using Swagger at [https://enceptics.pythona
 - **URL:** `/api/`
 - **Method:** POST
 - **Request Body:**
-
-```json
+`json
 {
 "name": "Jane Doe"
-}
+} `
 
 #### [pascalouma54@gmail.com](mailto:pascalouma54@gmail.com)
