@@ -41,7 +41,6 @@ Just head to `https://enceptics.pythonanywhere.com/api/`
 
 ### API Endpoints
  [https://enceptics.pythonanywhere.com/api](https://enceptics.pythonanywhere.com/api)
- [Visit Google](https://www.google.com)
 
  - Lists the names created and stored in the database
  [https://enceptics.pythonanywhere.com/api/1](https://enceptics.pythonanywhere.com/api/1)
