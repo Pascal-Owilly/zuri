@@ -40,13 +40,15 @@ This is an API endpoint which can be used to create, read, update and delete nam
 Just head to `https://enceptics.pythonanywhere.com/api/` 
 
 ### API Endpoints
+ [https://enceptics.pythonanywhere.com/swagger/](https://enceptics.pythonanywhere.com/api)
+ - Lists the names created and stored in the database
+ [https://enceptics.pythonanywhere.com/api/1](https://enceptics.pythonanywhere.com/api/1)
+ - Retrieves the first name of the list and performs CRUD operations to it (replace `1` with any ID to perform this on a different person)
 
-`https://enceptics.pythonanywhere.com/api/` - Lists the names created and stored in the database
-`https://enceptics.pythonanywhere.com/1/` - Retrieves the first name of the list and perfoms CRUD operations to it (replace `1` with any id to perform this on a different person)
+#### Documentation with swagger
 
-#### Documentaton with swagger
-
-`https://enceptics.pythonanywhere.com/swagger/` - The documentation explaining full details and usage of the endpoints
+ [https://enceptics.pythonanywhere.com/swagger/](https://enceptics.pythonanywhere.com/swagger/)
+ - The documentation explaining full details and usage of the endpoints
 
 #### Create a New Person
 
