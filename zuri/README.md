@@ -31,6 +31,7 @@ You need `python version 3.9` and above, `Django 4.2`
     `cd zuri`
     `pip install django`
     `pip install djangorestframework`
+    `pip install drf-yasg` - This is a swagger doc which will provide the request and response 
     `python manage.py runserver`
 
 ## Usage
