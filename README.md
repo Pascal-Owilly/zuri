@@ -34,8 +34,7 @@ You need `python version 3.9` and above, `Django 4.2`
 
 ## API Usage
 
-This is an API endpoint which can be used to create, read, update and delete names and store them in the database.
-Just head to `https://enceptics.pythonanywhere.com/api/` 
+This is an API endpoint which can be used to create, read, update and delete names and store them in the database. 
 
 ### API Endpoints
  [https://enceptics.pythonanywhere.com/api](https://enceptics.pythonanywhere.com/api)
