@@ -31,18 +31,22 @@ You need `python version 3.9` and above, `Django 4.2`
     `cd zuri`
     `pip install django`
     `pip install djangorestframework`
+    `pip install drf-yasg` - This is a swagger doc which will provide the request and response 
     `python manage.py runserver`
 
-## Usage
+## API Usage
 
-This is an API endpoint which can be used to create, read, update and delete names
-just hed to 
+This is an API endpoint which can be used to create, read, update and delete names and store them in the database.
+Just head to `https://enceptics.pythonanywhere.com/api/` 
 
 ### API Endpoints
 
-`/api/persons` - This will list the names created and stored in the database
-`api/persons/1` - Retrieves the first name of the list
-`api/persons/2` - Retrieves the second name of the list etc
+`https://enceptics.pythonanywhere.com/api/` - Lists the names created and stored in the database
+`https://enceptics.pythonanywhere.com/1/` - Retrieves the first name of the list and perfoms CRUD operations to it (replace `1` with any id to perform this on a different person)
+
+#### Documentaton with swagger
+
+`https://enceptics.pythonanywhere.com/swagger/` - The documentation explaining full details and usage of the endpoints
 
 #### Create a New Person
 
