@@ -43,7 +43,7 @@ You'll need the following software installed:
 - Description: Lists the names created and stored in the database
 
 - **Retrieve and CRUD Operations on a Name:**
-- URL: `https://enceptics.pythonanywhere.com/1/`
+- URL: `https://enceptics.pythonanywhere.com/api/1/`
 - Description: Retrieves the first name in the list and performs CRUD operations on it. You can replace `1` with any id to perform these operations on a different person.
 
 - **List a Specific Name with a Query Parameter:**
